@@ -1,0 +1,31 @@
+.background {
+  background-image: url("../../assets/background1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #000000a4;
+  background-blend-mode: darken;
+  height: 100vh;
+}
+
+.triangleLeft {
+  width: 20vw;
+  height: 100%;
+  border-top: 10vh solid transparent;
+  border-left: 50vw solid #ffffff;
+  border-bottom: 100% solid transparent;
+}
+
+.triangleRight {
+  width: 20vw;
+  height: 100%;
+  border-top: 10vh solid transparent;
+  border-right: 50vw solid #ffffff;
+  border-bottom: 100% solid transparent;
+}
+
+.rectangle {
+  height: 15vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
