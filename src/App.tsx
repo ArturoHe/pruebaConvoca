@@ -1,11 +1,12 @@
 import "./App.css";
 
 import Background from "./components/Background";
+import SecondModule from "./functionalities/SecondModule";
 
 function App() {
   return (
     <>
-      <Background />
+      <SecondModule />
     </>
   );
 }
