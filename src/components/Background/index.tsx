@@ -3,8 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import ButtonAction from "../general/ButtonAction/indesx";
 
-import Rectangle from "../../assets/module1/path4.svg";
-
 type Props = {};
 
 function index({}: Props) {
@@ -39,26 +37,11 @@ function index({}: Props) {
             </Container>
           </div>
         </div>
-
-        <Row>
-          <Col xs={6} md={6} lg={6}>
-            <div
-              className={`${styles.testos}`}
-              style={{ backgroundColor: "white", height: "10rem" }}
-            ></div>
-          </Col>
-
-          <Col xs={6} md={6} lg={6}>
-            <div
-              className={`${styles.testos}`}
-              style={{ backgroundColor: "white", height: "10rem" }}
-            ></div>
-          </Col>
-        </Row>
       </div>
     </>
   );
 }
 
 export default index;
+
 /*<div className={`${styles.triangleLeft}`}></div>*/

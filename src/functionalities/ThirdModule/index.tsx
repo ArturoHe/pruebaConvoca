@@ -1,127 +1,71 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ContactForm from "../../components/module3/ContactForm";
+import styles from "./style.module.css";
+import ContactData from "../../components/module3/ContactData";
+import { IoLogoFacebook, IoLogoTwitter, IoLogoLinkedin } from "react-icons/io";
+
+import map from "../../assets/module3/map.png";
+import Footer from "../../components/module3/Footer";
 
 type Props = {};
 
 function index({}: Props) {
   return (
     <>
-      <h2>Contact Us</h2>
-
-      <h4>
-        Most calendars are designed for teams. Slate is designed for freelancers{" "}
-      </h4>
-
-      <Row>
-        <Col>
-          <div
-            style={{
-              height: "20rem",
-              width: "15rem",
-              backgroundColor: "gray",
-            }}
-          >
-            <p>Aqui va el Form</p>
+      <div style={{ height: "100vh", marginTop: "15vh" }}>
+        <div className="text-center">
+          <div style={{ maxWidth: "30vw", margin: "auto" }}>
+            <h2 className="my-5">Contact Us</h2>
+            <h4 className="my-5">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
           </div>
-        </Col>
-
-        <Col>
-          <Container>
-            <Row>
-              <Col>
-                <div
-                  style={{
-                    height: "2rem",
-                    width: "2rem",
-                    backgroundColor: "black",
-                  }}
-                ></div>
-                <h6>
-                  6386 Spring St undefined Anchorage, Georgia 12473 United
-                  States
-                </h6>
-              </Col>
-              <Col>
-                <div
-                  style={{
-                    height: "2rem",
-                    width: "2rem",
-                    backgroundColor: "black",
-                  }}
-                ></div>
-                <h6>(843) 555-0130</h6>
-              </Col>
-              <Col>
-                <div
-                  style={{
-                    height: "2rem",
-                    width: "2rem",
-                    backgroundColor: "black",
-                  }}
-                ></div>
-                <h6>willie.jennings@example.com</h6>
-              </Col>
-            </Row>
-          </Container>
-          <Container>
-            <div
-              style={{
-                height: "20rem",
-                width: "30rem",
-                backgroundColor: "black",
-              }}
-            ></div>
-          </Container>
-          <Container>
-            <Row>
-              <Col lg={1}>
-                <p>fb</p>
-              </Col>
-              <Col lg={1}>
-                <p>ins</p>
-              </Col>
-              <Col lg={1}>
-                <p>yt</p>
-              </Col>
-            </Row>
-          </Container>
-        </Col>
-      </Row>
-
-      <div style={{ height: "20rem", width: "100vw", backgroundColor: "gray" }}>
-        <Container className="my-5">
+        </div>
+        <Container fluid className="my-5">
           <Row>
-            <Col>
-              <Row>
-                <Col>
-                  <p>1 izq</p>
-                </Col>
-                <Col>
-                  <p>2 izq</p>
-                </Col>
-                <Col>
-                  <p>3 izq</p>
-                </Col>
-              </Row>
+            <Col md={6}>
+              <Container className="d-flex justify-content-center">
+                <div className={`text-center ${styles.CardContact} `}>
+                  <ContactForm />
+                </div>
+              </Container>
             </Col>
-            <Col>
-              <p>Derecha 1</p>
-              <p>Derecha 2</p>
+            <Col md={6}>
+              <Container className="text-center">
+                <ContactData />
+              </Container>
+
+              <div className="align-items-center d-flex justify-content-center my-5">
+                <img
+                  src={map}
+                  alt="map"
+                  className={styles.map}
+                  style={{ width: "25vw" }}
+                />
+              </div>
+
               <Container>
                 <Row>
-                  <Col lg={1}>
-                    <p>fb</p>
+                  <Col lg={1} style={{ fontSize: "1.5rem" }}>
+                    <IoLogoTwitter />
                   </Col>
-                  <Col lg={1}>
-                    <p>ins</p>
+                  <Col lg={1} style={{ fontSize: "1.5rem" }}>
+                    <IoLogoFacebook />
                   </Col>
-                  <Col lg={1}>
-                    <p>yt</p>
+                  <Col lg={1} style={{ fontSize: "1.5rem" }}>
+                    <IoLogoLinkedin />
                   </Col>
                 </Row>
               </Container>
             </Col>
           </Row>
+        </Container>
+        <Container fluid style={{ backgroundColor: "#252B42" }}>
+          <div>
+            <Footer />
+          </div>
         </Container>
       </div>
     </>

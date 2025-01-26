@@ -6,6 +6,7 @@
   background-color: #000000a4;
   background-blend-mode: darken;
   height: 100vh;
+  clip-path: polygon(50% 85%, 100% 60%, 100% 0, 0 0, 0% 60%);
 }
 
 .triangleLeft {
@@ -26,8 +27,4 @@
   height: 1vh;
   width: 100%;
   background-color: #08ce8c;
-}
-
-.testos {
-  clip-path: polygon(0 0, 100% 86%, 100% 100%, 0% 100%);
 }
