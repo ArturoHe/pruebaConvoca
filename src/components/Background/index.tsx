@@ -1,22 +1,21 @@
-import React from "react";
 import styles from "./style.module.css";
 import { Col, Container, Row } from "react-bootstrap";
-import NavBar from "../NavBar";
-import ButtonAction from "../ButtonAction/indesx";
+
+import ButtonAction from "../general/ButtonAction/indesx";
+
+import Rectangle from "../../assets/module1/path4.svg";
 
 type Props = {};
 
 function index({}: Props) {
   return (
     <>
-      <div className={`${styles.background}`}>
-        <NavBar />
-
+      <div className={`${styles.background}`} style={{ position: "relative" }}>
         <div
           className="container"
           style={{ minHeight: "65vh", textAlign: "center", color: "white" }}
         >
-          <div style={{ paddingTop: "10vh" }}>
+          <div style={{ paddingTop: "20vh" }}>
             <h1>
               The best products <br />
               start with Figma
@@ -30,7 +29,7 @@ function index({}: Props) {
             </h5>
           </div>
 
-          <div style={{ paddingTop: "10vh" }}>
+          <div style={{ paddingTop: "10vh", paddingBottom: "10vh" }}>
             <Container>
               <Row style={{ justifyContent: "center" }}>
                 <Col xs={5} md={4} lg={2}>
@@ -41,14 +40,25 @@ function index({}: Props) {
           </div>
         </div>
 
-        <div className="d-flex flex-row">
-          <div className={`${styles.triangleLeft}`}></div>
-          <div className={`${styles.triangleRight}`}></div>
-        </div>
-        <div className={`${styles.rectangle}`}></div>
+        <Row>
+          <Col xs={6} md={6} lg={6}>
+            <div
+              className={`${styles.testos}`}
+              style={{ backgroundColor: "white", height: "10rem" }}
+            ></div>
+          </Col>
+
+          <Col xs={6} md={6} lg={6}>
+            <div
+              className={`${styles.testos}`}
+              style={{ backgroundColor: "white", height: "10rem" }}
+            ></div>
+          </Col>
+        </Row>
       </div>
     </>
   );
 }
 
 export default index;
+/*<div className={`${styles.triangleLeft}`}></div>*/

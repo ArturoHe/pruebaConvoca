@@ -1,54 +1,40 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+
+import video1 from "../../assets/module2/video1Image.jpg";
+import video2 from "../../assets/module2/video2Image.jpeg";
+
+import Features from "../../components/module2/Features";
+import VideoPlay from "../../components/module2/VideoPlay";
 
 type Props = {};
 
 function index({}: Props) {
   return (
     <>
-      <Container className="text-center mt-2">
-        <h2>Second Module</h2>
+      <div className="pt-4">
+        <Container className="text-center">
+          <h2>Features</h2>
 
-        <div className="my-5">
-          <h5>
-            Most calendars are designed for teams. <br />
-            Slate is designed for freelancers
-          </h5>
+          <Container className="my-5">
+            <h4 style={{ fontWeight: 300 }}>
+              <div>Most calendars are designed for teams.</div>
+              <div className="d-none d-sm-block">
+                Slate is designed for freelancers
+              </div>
+            </h4>
+          </Container>
+        </Container>
+
+        <div className="d-block d-sm-none">
+          <VideoPlay image={video1} />
         </div>
-      </Container>
 
-      <Container className="text-center my-5">
-        <Row>
-          <Col>
-            <Container>
-              <div>imagen</div>
-              <div>titulo</div>
-              <div>descr</div>
-            </Container>
-          </Col>
-          <Col>
-            <Container>
-              <div>imagen</div>
-              <div>titulo</div>
-              <div>descr</div>
-            </Container>
-          </Col>
-          <Col>
-            <Container>
-              <div>imagen</div>
-              <div>titulo</div>
-              <div>descr</div>
-            </Container>
-          </Col>
-        </Row>
-      </Container>
+        <Features />
 
-      <Container
-        className="text-center"
-        style={{ maxheight: "10vh", bacgroundColor: "black" }}
-      >
-        <img src="videImage.jpeg" alt="" />
-      </Container>
+        <div className="d-none d-sm-block">
+          <VideoPlay image={video2} />
+        </div>
+      </div>
     </>
   );
 }
