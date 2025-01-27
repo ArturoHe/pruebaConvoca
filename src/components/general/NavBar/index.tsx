@@ -7,7 +7,7 @@ import "./style.css";
 
 function BasicExample() {
   return (
-    <Navbar fixed="top" expand="lg">
+    <Navbar expand="lg">
       <Container className="d-flex justify-content-center ">
         <Row>
           <Col className="order-2">

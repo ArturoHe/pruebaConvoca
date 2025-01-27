@@ -11,23 +11,40 @@ function index({}: Props) {
       <div className={`${styles.background}`} style={{ position: "relative" }}>
         <div
           className="container"
-          style={{ minHeight: "65vh", textAlign: "center", color: "white" }}
+          style={{ textAlign: "center", color: "white" }}
         >
-          <div style={{ paddingTop: "20vh" }}>
-            <h1>
-              The best products <br />
-              start with Figma
-            </h1>
-          </div>
+          <Container style={{ paddingTop: "20vh" }}>
+            <Row>
+              <Col></Col>
+              <Col xs={12} md={8} lg={5}>
+                <h1 style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                  The best products start with Figma
+                </h1>
+              </Col>
+              <Col></Col>
+            </Row>
+          </Container>
 
-          <div style={{ paddingTop: "10vh" }}>
-            <h5>
-              Most calendars are designed for teams. Slate is designed <br />
-              for freelancers
-            </h5>
-          </div>
+          <Container>
+            <Container className="my-5">
+              <Row>
+                <Col lg={1}></Col>
+                <Col lg={10}>
+                  <h4 style={{ fontWeight: 300 }}>
+                    <div className="px-5">
+                      Most calendars are designed for teams.
+                    </div>
+                    <div className="d-none d-sm-block">
+                      Slate is designed for freelancers
+                    </div>
+                  </h4>
+                </Col>
+                <Col lg={1}></Col>
+              </Row>
+            </Container>
+          </Container>
 
-          <div style={{ paddingTop: "10vh", paddingBottom: "10vh" }}>
+          <div>
             <Container>
               <Row style={{ justifyContent: "center" }}>
                 <Col xs={5} md={4} lg={2}>

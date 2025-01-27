@@ -13,11 +13,11 @@ function index({}: Props) {
     <>
       <div className="pt-4">
         <Container className="text-center">
-          <h2>Features</h2>
+          <h2 style={{ fontSize: "2.5rem" }}>Features</h2>
 
           <Container className="my-5">
-            <h4 style={{ fontWeight: 300 }}>
-              <div>Most calendars are designed for teams.</div>
+            <h4 style={{ fontWeight: 300, color: "#374754" }}>
+              <div className="px-5">Most calendars are designed for teams.</div>
               <div className="d-none d-sm-block">
                 Slate is designed for freelancers
               </div>

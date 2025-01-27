@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import FeatureCard from "../FeatureCard";
 import icon1 from "../../../assets/module2/feature1Icon.svg";
@@ -9,9 +8,9 @@ type Props = {};
 
 function index({}: Props) {
   return (
-    <Container>
-      <Row className="justify-content-center" style={{ gap: "rem" }}>
-        <Col xs={8} sm={7} md={4} lg={3} className="my-4">
+    <Container className="mt-5">
+      <Row className="justify-content-center" style={{ gap: "1rem" }}>
+        <Col xs={9} sm={7} md={4} lg={3} className="my-4">
           <FeatureCard
             image={icon1}
             title="OpenType features Variable fonts"
