@@ -84,9 +84,9 @@ function index({}: Props) {
           </Row>
         </Container>
 
-        <Container className="d-block d-sm-none my-5">
+        <Container className="d-block d-sm-none my-5 mx-4">
           <Row>
-            <Col xs={5}>
+            <Col>
               <div className={`shadow text-center ${styles.CardContact}`}>
                 <ContactForm />
               </div>
